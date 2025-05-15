@@ -20,12 +20,12 @@ h2 {
     margin-bottom: 3%;
 }
 h3 {
-  padding-bottom: 3%;
+    padding-bottom: 3%;
+    font-size: 120%;
 }
 p {
-    font: size 1.5em;
-    line-height: 1.5;
     font-size: 100%;
+    line-height: 1.5;
 }
 
 .navbar {
@@ -138,7 +138,7 @@ p {
     font-weight: 700;
     text-transform: uppercase;
     margin: 5px 0;
-    font: size 1.5em;
+    font-size: 1.5em;
 }
 
 .value {
@@ -162,8 +162,8 @@ p {
 }
 
 .competences img {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     margin-bottom: 5px;
 }
@@ -235,13 +235,14 @@ p {
 
 .languages-container h3 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
 .languages-list {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: 13%;
     justify-content: space-around;
 }
 
@@ -259,27 +260,94 @@ p {
 }
 
 .qualites-container {
-  border: 2px solid #000;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .qualites-container h3 {
-  font-size: 1.5em;
-  margin-bottom: 15px;
-  text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .qualites-liste {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .qualite-item {
-  margin-bottom: 10px;
+    margin-bottom: 29px;
 }
 
 .qualite-item b {
-  font-weight: bold;
+    font-weight: bold;
+}
+
+.projects-container {
+    justify-content: center;
+}
+
+.project-card {
+    width: 350px;
+    height: 250px;
+    perspective: 1000px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.card-inner {
+    position: relative;
+    width: 105%;
+    height: 105%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.project-card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card-front img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background-color: #f0f0f0;
+}
+
+.card-back h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-back p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
