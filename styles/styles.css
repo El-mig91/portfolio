@@ -57,7 +57,7 @@ p {
     color: #34db6e;
 }
 
-.space_between {
+.space-between {
     justify-content: space-between;
 }
 
@@ -145,13 +145,25 @@ p {
     display: block;
     font-size: 1.3rem;
 }
+.logos-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Pour que ça reste propre sur petit écran */
+    width: 100%;
+}
 
 .contact {
+   flex: 1;
+    min-width: 280px; 
+    max-width: 350px; 
     border: 2px solid #000000;
     border-radius: 15px;
     padding: 30px;
     box-sizing: border-box;
-    margin-right: 2%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
 }
 
 .competences {
@@ -159,6 +171,9 @@ p {
     border-radius: 15px;
     padding: 20px;
     box-sizing: border-box;
+    min-width: 120px; 
+    flex: 1; 
+    max-width: 200px;
 }
 
 .competences img {
@@ -241,8 +256,8 @@ p {
 .languages-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 13%;
+    gap: 25px;
+    margin-top: 8%;
     justify-content: space-around;
 }
 
@@ -255,8 +270,8 @@ p {
 
 .language-item img {
     width: 100px;
-    height: 80px;
-    margin-bottom: 5px;
+    height: 85px;
+    margin-bottom: 10px;
 }
 
 .qualites-container {
@@ -286,7 +301,19 @@ p {
 }
 
 .projects-container {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap :30px;
+    width: 130%;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .project-card {
