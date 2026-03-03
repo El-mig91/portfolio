@@ -116,6 +116,13 @@ p { font-size: 100%; line-height: 1.5; }
 #contact .flex { 
     margin-top: 30px; 
 }
+.logos-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Pour que ça reste propre sur petit écran */
+    width: 100%;
+}
 
 .contact {
     background: #fff; /* Pour que les blocs ressortent sur l'image de fond */
