@@ -1,0 +1,161 @@
+[33mcommit bb9d02824375aa9ea26518f7679ec41d28281b5e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Miguel Nongni <miguel.nongni85@gmail.com>
+Date:   Tue Feb 17 13:08:56 2026 +0100
+
+    changement
+
+[33mcommit 147798996f14f3e8885afe2b045eb5f140cc249f[m
+Author: Miguel Nongni <miguel.nongni85@gmail.com>
+Date:   Tue Feb 17 13:04:58 2026 +0100
+
+    Mise au propre du CSS contact
+
+[33mcommit 0161f5cb9852bed5e975350e2d2e48645a461101[m
+Author: El-mig91 <miguelnongni85@gmail.com>
+Date:   Mon Feb 16 10:52:06 2026 +0100
+
+    taille et flex
+
+[33mcommit 44a5d54de7fe6c6a1e1627a0c09797d70892fbd0[m
+Author: El-mig91 <miguelnongni85@gmail.com>
+Date:   Mon Feb 16 10:51:29 2026 +0100
+
+    taille et flex
+
+[33mcommit 6aa0f57672db05f6294e3e2fce01fc65953fff36[m
+Author: El-mig91 <miguelnongni85@gmail.com>
+Date:   Thu May 15 20:38:50 2025 +0200
+
+    Add files via upload
+
+[33mcommit 3681d8b2e2d9188f6743890f5cd310a75d1d2c21[m
+Author: El-mig91 <miguelnongni85@gmail.com>
+Date:   Thu May 15 20:38:30 2025 +0200
+
+    Create app.js
+
+[33mcommit 7a50604aca79c546f63b29d1bbff8cd4d5fea5c2[m
+Author: El-mig91 <miguelnongni85@gmail.com>
+Date:   Thu May 15 20:37:01 2025 +0200
+
+    Add files via upload
+
+[33mcommit 443a209390089da5bab83679b7a9f9dac4d18b12[m
+Author: El-mig91 <miguelnongni85@gmail.com>
+Date:   Thu May 15 20:36:25 2025 +0200
+
+    Add files via upload
+
+[33mcommit 1adbd220bb166527ea90767d7b07cc33ec28d853[m
+Author: El-mig91 <miguelnongni85@gmail.com>
+Date:   Thu May 15 20:35:42 2025 +0200
+
+    Add files via upload
+
+[33mcommit 33b48b1cd1d2bd1de662268e55618ff3272084d7[m
+Author: El-mig91 <miguelnongni85@gmail.com>
+Date:   Tue May 13 23:46:28 2025 +0200
+
+    Add files via upload
+
+[33mcommit 8f0c05e545fd73b2abd51aa229224906e25979cf[m
+Author: El-mig91 <miguelnongni85@gmail.com>
+Date:   Tue May 13 23:46:02 2025 +0200
+
+    Add files via upload
+
+[33mcommit b577e771d7b3d4f605757614bdf59fd697d645e9[m
+Author: Miguel Nongni <mnongni@ETUD.IUT-ORSAY.FR>
+Date:   Tue May 13 11:10:18 2025 +0200
+
+    index
+
+[33mcommit 869773a56a101d137d589d56c785f9eadd003047[m
+Author: El-mig91 <miguelnongni85@gmail.com>
+Date:   Tue May 13 10:21:17 2025 +0200
+
+    Update index.html
+
+[33mcommit 2e1da22fa366e67bafa4efade4acddaf8553f557[m
+Author: El-mig91 <miguelnongni85@gmail.com>
+Date:   Tue May 13 01:17:29 2025 +0200
+
+    Update index.html
+
+[33mcommit 7ee22da2d36fc5f4cf34c2647e01d37fc0d850f7[m
+Author: El-mig91 <miguelnongni85@gmail.com>
+Date:   Tue May 13 00:58:51 2025 +0200
+
+    Add files via upload
+
+[33mcommit f95cda712ef842e81c20eabc302055775e618f58[m
+Author: Fayolle Elsa NONGNI <fayolle-elsa.nongni@colleges91.fr>
+Date:   Tue May 13 00:55:28 2025 +0200
+
+    Ajout .gitkeep pour garder le dossier
+
+[33mcommit e41abf36e1fe0c2dbe6b55ba73cf84d6a87683aa[m
+Author: Fayolle Elsa NONGNI <fayolle-elsa.nongni@colleges91.fr>
+Date:   Tue May 13 00:30:48 2025 +0200
+
+    Corrige définitivement le nom du dossier en styles
+
+[33mcommit af986d9e891e23488f4d1a5a3798ec779459cdd0[m
+Author: Fayolle Elsa NONGNI <fayolle-elsa.nongni@colleges91.fr>
+Date:   Tue May 13 00:30:05 2025 +0200
+
+    Renomme styles en tmp pour forcer Git
+
+[33mcommit 0c94a5e880b5d0e5ce5a32b5e47d29719c275725[m
+Author: Fayolle Elsa NONGNI <fayolle-elsa.nongni@colleges91.fr>
+Date:   Tue May 13 00:09:43 2025 +0200
+
+    Renommage du dossier de 'ancien_nom' à 'nouveau_nom'
+
+[33mcommit 28af941b4aca0502aaab6bf88afad389020ca0c8[m
+Author: El-mig91 <miguelnongni85@gmail.com>
+Date:   Sun May 11 16:43:39 2025 +0200
+
+    Delete img/c
+
+[33mcommit 66faf95afe585a4ad73499bdc0a51131bd035801[m
+Author: El-mig91 <miguelnongni85@gmail.com>
+Date:   Sun May 11 16:43:18 2025 +0200
+
+    Create c
+
+[33mcommit cd3a6a134c100e9d3a35d638d471dc9f6aa1f756[m
+Author: El-mig91 <miguelnongni85@gmail.com>
+Date:   Sun May 11 15:42:40 2025 +0200
+
+    Delete syles/styles
+
+[33mcommit 16d99ac3c550de7a5f25190232a6cf6556c7ef95[m
+Author: El-mig91 <miguelnongni85@gmail.com>
+Date:   Sun May 11 15:42:15 2025 +0200
+
+    Add files via upload
+
+[33mcommit 75f1880e459148fc61330d0cf7d6b0419d97c55a[m
+Author: El-mig91 <miguelnongni85@gmail.com>
+Date:   Sun May 11 15:41:20 2025 +0200
+
+    Create styles
+
+[33mcommit e25163785d82ce18185a9f84dfb4ab9b84897ab0[m
+Author: El-mig91 <miguelnongni85@gmail.com>
+Date:   Sun May 11 15:38:59 2025 +0200
+
+    Add files via upload
+
+[33mcommit 6a71da1fdd4ad9bfe9b03b145b964d267979474f[m
+Author: El-mig91 <miguelnongni85@gmail.com>
+Date:   Sun May 11 15:31:08 2025 +0200
+
+    Delete styles
+
+[33mcommit a9b2158c973c564322409785d682f3551a39ad8d[m
+Author: El-mig91 <miguelnongni85@gmail.com>
+Date:   Sun May 11 15:30:44 2025 +0200
+
+    Create styles
