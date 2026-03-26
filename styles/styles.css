@@ -1,6 +1,4 @@
- url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-
+ <url>('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
 
@@ -310,23 +308,27 @@ p {
 
     max-width: none;
 
-   
-
-}#contact .flex {
+}
+contact .flex {
 
     display: flex;
 
-    flex-wrap: wrap;       /* autorise le passage à la ligne */
+    flex-wrap: wrap;       
 
-    gap: 10px;             /* espace entre les blocs */
+    gap: 10px;             
 
     justify-content: center;
 
-   
-
 }
 
+.contact a {
+    color: inherit; 
+    text-decoration: none; 
+}
 
+.contact a:hover {
+    color: #34db6e; 
+}
 
 .competences {
 
