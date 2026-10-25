@@ -1,234 +1,698 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>Portfolio Miguel Nongni</title>
-        <meta type="Description" content="Bienvenue dans mon portfolio" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="styles/styles.css" type="text/css">
-    </head>
-    <body>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#Accueil">Accueil</a></li>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#realisations">Réalisations</a></li>
-                <li><a href="#contact">Contactez-moi</a></li>
-                <li><a href="img/miguel-cv.pdf" target="_blank" class="cv-link">Mon CV</a></li>
-            </ul>
-        </nav>
-        <div id="Accueil" class="slider">
-            <img src="img/backgreen1.png" class="slider-backgroud">
-            <div class="slider-content">
-                <h1> Miguel Ryan NONGNI</h1>
-                <p> Étudiant en BUT Informatique</p>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Miguel Ryan NONGNI - Étudiant en BUT Informatique</title>
+    <meta name="description"
+        content="Portfolio professionnel de Miguel Ryan NONGNI, étudiant en BUT Informatique à l'IUT d'Orsay (Université Paris-Saclay). Projets en C++, Java, SQL, développement web et bases de données.">
+
+    <!-- Typographie Moderne & Lisible (Google Fonts: Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <!-- =======================================================================
+         1. NAVIGATION PRINCIPALE (Fixe & Responsive)
+         ======================================================================= -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#accueil" class="nav-brand">
+                <div class="nav-avatar">MN</div>
+                <div>
+                    <div class="nav-name">Miguel Ryan NONGNI</div>
+                    <div class="nav-title">Étudiant BUT Informatique</div>
+                </div>
+            </a>
+
+            <!-- Menu de navigation desktop & mobile -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="#accueil" class="nav-link active">Accueil</a>
+                <a href="#apropos" class="nav-link">À propos & Parcours</a>
+                <a href="#competences" class="nav-link">Compétences</a>
+                <a href="#realisations" class="nav-link">Réalisations</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="img/stage-M.pdf" target="_blank" download="CV_Miguel_Nongni.pdf"
+                    class="btn btn-primary btn-sm">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Télécharger CV
+                </a>
+
+                <!-- Bouton burger mobile -->
+                <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- =======================================================================
+         2. SECTION ACCUEIL / HERO (Ambiance Corporate Moderne)
+         ======================================================================= -->
+    <section id="accueil" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-status-pill">
+                    <span class="status-dot"></span>
+                    <span>Ouvert aux opportunités de stage & projets techniques</span>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="text-gradient"> Miguel Nongni Ryan</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    étudiant en BUT Informatique à l'<strong>IUT d'Orsay
+                        (Université Paris-Saclay)</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =======================================================================
+         3. SECTION À PROPOS & PARCOURS
+         ======================================================================= -->
+    <section id="apropos" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Profil & Parcours</span>
+                <h2 class="section-title">À propos de moi</h2>
+                <p class="section-subtitle">
+                    Découvrez mon profil académique, ma vision du métier d'informaticien et mon parcours de formation.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <!-- Colonne de gauche : Présentation & Langues -->
+                <div class="about-card">
+                    <h3>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        Présentation
+                    </h3>
+                    <p class="about-text">
+                        Je m'appelle Miguel Nongni et je suis actuellement étudiant en <strong>deuxième année de BUT
+                            Informatique</strong>. Intéressé par le développement <strong>d'applications</strong> et la
+                        <strong>gestion de bases de données</strong>,
+                        je m'investis dans chaque projet pour renforcer mes compétences techniques et apprendre de
+                        nouvelles méthodes de travail. Rigoureux, curieux et déterminé, je souhaite évoluer dans le
+                        développement et contribuer à des projets concrets.
+                    </p>
+
+                    <!-- Langues parlées -->
+                    <div class="languages-box">
+                        <h4>Compétences Linguistiques</h4>
+                        <div class="languages-list">
+                            <div class="lang-item">
+                                <img src="img/d-fr.png" alt="Drapeau Français" class="lang-flag">
+                                <div class="lang-info">
+                                    <span class="lang-name">Français</span>
+                                    <span class="lang-level">Bilingue</span>
+                                </div>
+                            </div>
+                            <div class="lang-item">
+                                <img src="img/d-ita.png" alt="Drapeau Italien" class="lang-flag">
+                                <div class="lang-info">
+                                    <span class="lang-name">Italien</span>
+                                    <span class="lang-level">Bilingue / Langue maternelle</span>
+                                </div>
+                            </div>
+                            <div class="lang-item">
+                                <img src="img/d-usa.png" alt="Drapeau Anglais" class="lang-flag">
+                                <div class="lang-info">
+                                    <span class="lang-name">Anglais</span>
+                                    <span class="lang-level">Niveau B1</span>
+                                </div>
+                            </div>
+                            <div class="lang-item">
+                                <img src="img/d-esp.png" alt="Drapeau Espagnol" class="lang-flag">
+                                <div class="lang-info">
+                                    <span class="lang-name">Espagnol</span>
+                                    <span class="lang-level">Niveau A2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Colonne de droite : Parcours & Qualités -->
+                <div class="about-card">
+                    <h3>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        </svg>
+                        Formation Académique
+                    </h3>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">2024 - Présent</span>
+                            <div class="timeline-title">BUT Informatique</div>
+                            <div class="timeline-institution">IUT d'Orsay - Université Paris-Saclay</div>
+                            <p class="timeline-desc">
+                                Parcours A - réalisation d’applications
+                            </p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">2021 - 2024</span>
+                            <div class="timeline-title">Baccalauréat Technologique STI2D</div>
+                            <div class="timeline-institution">Lycée Clément Ader</div>
+                            <p class="timeline-desc">
+                                Spécialité Systèmes d'Information et Numérique (SIN).
+                            </p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">2021</span>
+                            <div class="timeline-title">Diplôme National du Brevet</div>
+                            <div class="timeline-institution">Collège Les Pyramides</div>
+                        </div>
+                    </div>
+
+                    <!-- Atouts / Qualités professionnelles -->
+                    <div class="qualities-grid">
+                        <div class="quality-card">
+                            <div class="quality-title">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a"
+                                    stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Rigueur & Analyse
+                            </div>
+                            <div class="quality-desc">Capacité à décortiquer un problème complexe pour concevoir une
+                                solution structurée.</div>
+                        </div>
+
+                        <div class="quality-card">
+                            <div class="quality-title">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a"
+                                    stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Esprit d'équipe
+                            </div>
+                            <div class="quality-desc">Communication constructive et collaboration active sur les projets
+                                en binôme ou groupe.</div>
+                        </div>
+
+                        <div class="quality-card">
+                            <div class="quality-title">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a"
+                                    stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Adaptabilité
+                            </div>
+                            <div class="quality-desc">Facilité d'apprentissage face aux nouveaux environnements de
+                                travail et bibliothèques.</div>
+                        </div>
+
+                        <div class="quality-card">
+                            <div class="quality-title">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a"
+                                    stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Engagement
+                            </div>
+                            <div class="quality-desc">Motivation constante à finaliser chaque projet avec des exigences
+                                de qualité élevées.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =======================================================================
+         4. SECTION COMPÉTENCES TECHNIQUES
+         ======================================================================= -->
+    <section id="competences" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Technologies</span>
+                <h2 class="section-title">Compétences</h2>
+                <p class="section-subtitle">
+                    Technologies, langages et environnements maîtrisés dans le cadre de mes études et projets.
+                </p>
+            </div>
+
+            <!-- Grille de logos bien espacés avec le nom de chaque compétence -->
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-logo-wrap">
+                        <img src="img/logo-c++.png" alt="Logo C++">
+                    </div>
+                    <span class="tech-name">C++</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-logo-wrap">
+                        <img src="img/logo-java.png" alt="Logo Java">
+                    </div>
+                    <span class="tech-name">Java</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-logo-wrap">
+                        <img src="img/logo-php.png" alt="Logo PHP">
+                    </div>
+                    <span class="tech-name">PHP</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-logo-wrap">
+                        <img src="img/logo-sql.png" alt="Logo SQL">
+                    </div>
+                    <span class="tech-name">SQL</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-logo-wrap">
+                        <img src="img/logo-html.png" alt="Logo HTML">
+                    </div>
+                    <span class="tech-name">HTML</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-logo-wrap">
+                        <img src="img/logo-css.png" alt="Logo CSS">
+                    </div>
+                    <span class="tech-name">CSS</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-logo-wrap">
+                        <img src="img/logo-lunux.png" alt="Logo Linux">
+                    </div>
+                    <span class="tech-name">Linux</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =======================================================================
+         5. SECTION RÉALISATIONS & PROJETS
+         ======================================================================= -->
+    <section id="realisations" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio de Projets</span>
+                <h2 class="section-title">Réalisations</h2>
+                <p class="section-subtitle">
+                    Sélection de projets techniques illustrant mes compétences en développement logiciel, bases de
+                    données et web.
+                </p>
+            </div>
+
+            <!-- Filtres de projets simples et efficaces -->
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Tous les projets</button>
+                <button class="filter-btn" data-filter="dev">Développement C++</button>
+                <button class="filter-btn" data-filter="data">Bases de données & Analyse</button>
+                <button class="filter-btn" data-filter="web">Développement Web</button>
+            </div>
+
+            <!-- Grille de cartes de projets -->
+            <div class="projects-grid">
+
+                <!-- Projet 1 : Moteur de Jeu 2D (C++ / SDL2) -->
+                <article class="project-card" data-category="dev">
+                    <div class="project-media">
+                        <img src="img/projetc.png" alt="Projet Moteur de Jeu 2D en C++ et SDL2">
+                        <span class="project-badge">Développement Logiciel • C++</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Moteur de Jeu 2D & Algorithmique</h3>
+                        <p class="project-desc">
+                            Conception et développement d'un jeu vidéo 2D en C++ avec la bibliothèque graphique SDL2 :
+                            gestion des événements, moteur de détection des collisions (AABB), chargement dynamique de
+                            niveaux et optimisation des performances algorithmiques.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">C++</span>
+                            <span class="project-tag">SDL2</span>
+                            <span class="project-tag">POO</span>
+                            <span class="project-tag">Gestion Mémoire</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-primary btn-sm btn-open-modal" data-project="algo-c">
+                                <span>Voir les détails</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">Projet Universitaire</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 2 : Conception de Base de Données (SQL / Merise) -->
+                <article class="project-card" data-category="data">
+                    <div class="project-media">
+                        <img src="img/projetb.jpg" alt="Projet Création d'une base de données">
+                        <span class="project-badge">Bases de Données • SQL</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Conception & Gestion de Base de Données</h3>
+                        <p class="project-desc">
+                            Conception complète d'une base de données répondant aux besoins une entreprise : conception
+                            des plans,
+                            organisation propre des données, installation sur un logiciel (MySQL) et
+                            écriture des commandes pour bien exploiter les données.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">SQL</span>
+                            <span class="project-tag">Merise (MCD/MLD)</span>
+                            <span class="project-tag">Modélisation</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-primary btn-sm btn-open-modal" data-project="bdd">
+                                <span>Voir les détails</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">Projet Universitaire</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 3 : Plateforme Web CWAD -->
+                <article class="project-card" data-category="web">
+                    <div class="project-media">
+                        <img src="img/projeth.PNG" alt="Projet Site Web CWAD">
+                        <span class="project-badge">Développement Web</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Plateforme Web & Identité Visuelle CWAD</h3>
+                        <p class="project-desc">
+                            Création de l'image de marque (logo, style visuel, polices) et création complète d'un site
+                            internet moderne et adapté aux téléphones, en HTML, CSS et JavaScript.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-primary btn-sm btn-open-modal" data-project="cwad">
+                                <span>Voir les détails</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">Projet Universitaire</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 4 : Recueil de Besoins & Cahier des Charges -->
+                <article class="project-card" data-category="data">
+                    <div class="project-media">
+                        <img src="img/projetr.png" alt="Projet Recueil de besoins pour les éditions du caribou">
+                        <span class="project-badge">Ingénierie Logicielle & Gestion</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Spécifications & Recueil de Besoins</h3>
+                        <p class="project-desc">
+                            Analyse des processus métiers et rédaction du cahier des charges fonctionnel et technique
+                            pour une maison d'édition : modélisation des flux et cas d'utilisation, prototypage des
+                            interfaces utilisateur et formalisation des exigences logicielles.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Cahier des charges</span>
+                            <span class="project-tag">Analyse Métier</span>
+                            <span class="project-tag">UML</span>
+                            <span class="project-tag">Gestion de projet</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-primary btn-sm btn-open-modal" data-project="caribou">
+                                <span>Voir les détails</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">Projet Universitaire</span>
+                        </div>
+                    </div>
+                </article>
 
             </div>
         </div>
+    </section>
 
 
-        <div id="apropos" class="section bg-white">
-            <div class="boxed">
-                <div class="text-center">
-                    <h2>À propos de moi</h2>
+    <!-- =======================================================================
+         6. MODALE DÉTAILS DU PROJET (Popup Simple & Efficace)
+         ======================================================================= -->
+    <div class="modal-backdrop" id="projectModal" aria-hidden="true">
+        <div class="modal-container" role="dialog" aria-modal="true">
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Fermer la boîte de dialogue">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-media">
+                <img id="modalImage" src="" alt="Capture du projet">
+            </div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modalTitle">Titre du projet</h3>
+                    <div class="modal-subtitle" id="modalSubtitle">Sous-titre</div>
                 </div>
 
-                <div class="about-content flex space-between gap20">
-                    <div class="w40 flex column center-content">
-                        <h3>Présentation</h3>
-                        <p>
-                            Je m'appelle Miguel Nongni et je suis actuellement étudiant en première année de BUT Informatique.
-                            Passionné par les enjeux du secteur de la logistique et la gestion de bases de données, je m'investis dans
-                            chaque projet pour renforcer mes compétences techniques et apprendre de nouvelles méthodes de travail.
-                            Rigoureux, curieux et déterminé, je souhaite évoluer dans le domaine du développement logiciel et
-                            contribuer à des projets innovants et concrets.
-                        </p>
-                    </div>
-
-                    <div class="languages-container">
-                        <h3>Langues parlées</h3>
-                        <div class="languages-list flex space-around">
-                            <div class="language-item">
-                                <img src="./img/d-ita.png">
-                                <a class="niveau">Bilingue</a>
-                            </div>
-                            <div class="language-item">
-                                <img src="./img/d-fr.png">
-                                <a class="niveau">Bilingue</a>
-                            </div>
-                            <div class="language-item">
-                                <img src="./img/d-usa.png">
-                                <a class="niveau">B1</a>
-                            </div>
-                            <div class="language-item">
-                                <img src="./img/d-esp.png">
-                                <a class="niveau">A2</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="modal-section">
+                    <h4>Contexte & Objectif</h4>
+                    <p id="modalContext"></p>
                 </div>
-                <div class="about-content flex space-between gap20">
-                    <div class="w40 flex column center-content">
-                        <h3>Parcours scolaire</h3>
-                        <p>
-                            <b>BUT Informatique</b><br>
-                            septembre 2024 - IUT D'Orsay Université Paris-Saclay
-                        </p>
-                        <p>
-                            <b>Baccalauréat Technologique</b><br>
-                            2021-2024 - Lycée Clément Ader<br>
-                            Spécialité: Systèmes d'Information et Numérique (SIN)
-                        </p>
-                        <p>
-                            <b>Brevet des Collèges</b><br>
-                            2021 - Collège Les Pyramides
-                        </p>
-                    </div>
-                    <div class="qualites-container">
-                        <h3>Qualités</h3>
-                        <ul class="qualites-liste">
-                            <li class="qualite-item">
-                                <b>Esprit d'équipe:</b> Capacité à collaborer efficacement avec les autres pour atteindre un objectif commun.
-                            </li>
-                            <li class="qualite-item">
-                                <b>Motivation:</b> Désir profond d'accomplir des tâches et d'atteindre des objectifs, avec persévérance et engagement.
-                            </li>
-                            <li class="qualite-item">
-                                <b>Adaptabilité:</b> Aptitude à s'ajuster rapidement aux changements de situation, aux nouvelles tâches et aux environnements de travail variés.
-                            </li>
-                        </ul>
-                    </div>
-                    
+
+                <div class="modal-section">
+                    <h4>Principales Réalisations</h4>
+                    <ul id="modalTasksList"></ul>
+                </div>
+
+                <div class="modal-section">
+                    <h4>Technologies Clés</h4>
+                    <div class="project-tags" id="modalTags"></div>
+                </div>
+
+                <div class="modal-section">
+                    <h4>Compétences BUT Validées</h4>
+                    <p id="modalCompetences" style="font-style: italic; color: var(--color-primary);"></p>
                 </div>
             </div>
         </div>
+    </div>
 
 
-        <div id="competences" class="section bg-image">
-            <div class="boxed ">
-                <div class="text-center">
-                            <h2>Compétences</h2>
-                            <div class="flex column gap20 ">
-                                <div class="flex logos-row">
-                                    <div class="w25 competences wm100">
-                                        <img src="./img/logo-html.png">
-                                    </div>
-                                    <div class="w25 competences wm100">
-                                        <img src="./img/logo-css.png">
-                                    </div>
-                                    <div class="w25 competences wm100">
-                                        <img src="./img/logo-c++.png">
-                                    </div>
-                                    <div class="w25 competences wm100">
-                                        <img src="./img/logo-java.png">
-                                    </div>
-                                    <div class="w25 competences wm100">
-                                        <img src="./img/logo-sql.png">
-                                    </div>
-                                </div>
-                            </div>
+    <!-- =======================================================================
+         7. SECTION CONTACT & COORDONNÉES
+         ======================================================================= -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Échangeons</span>
+                <h2 class="section-title">Prendre Contact</h2>
+                <p class="section-subtitle">
+                    Disponible pour échanger autour d'opportunités de stage, d'alternance ou de projets techniques.
+                </p>
+            </div>
 
+            <div class="contact-grid">
+                <!-- Informations directes & Réseaux -->
+                <div class="contact-info-cards">
 
+                    <!-- Carte Email -->
+                    <div class="contact-info-card">
+                        <div class="contact-icon-wrapper">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">Email Professionnel</div>
+                            <a href="mailto:miguel.nongni1@gmail.com" class="contact-value">miguel.nongni1@gmail.com</a>
+                        </div>
+                        <button class="btn-copy" id="copyEmailBtn" title="Copier l'adresse email">Copier</button>
+                    </div>
+
+                    <!-- Carte Téléphone -->
+                    <div class="contact-info-card">
+                        <div class="contact-icon-wrapper">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">Téléphone</div>
+                            <a href="tel:+33781961276" class="contact-value">+33 7 81 96 12 76</a>
+                        </div>
+                    </div>
+
+                    <!-- Carte LinkedIn -->
+                    <div class="contact-info-card">
+                        <div class="contact-icon-wrapper">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">Réseau Professionnel</div>
+                            <a href="https://www.linkedin.com/in/miguel-nongni-70b570301" target="_blank"
+                                rel="noopener noreferrer" class="contact-value">
+                                linkedin.com/in/miguel-nongni-70b570301
+                            </a>
+                        </div>
+                        <a href="https://www.linkedin.com/in/miguel-nongni-70b570301" target="_blank"
+                            rel="noopener noreferrer" class="btn-copy">
+                            Profil ↗
+                        </a>
+                    </div>
+
+                    <!-- Carte Localisation & Mobilité -->
+                    <div class="contact-info-card">
+                        <div class="contact-icon-wrapper">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">Localisation & Mobilité</div>
+                            <div class="contact-value">Île-de-France</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Formulaire de contact direct -->
+                <div class="contact-form-box">
+                    <h3>Envoyer un message</h3>
+                    <p>Renseignez vos coordonnées pour m'adresser un message direct dans votre boîte mail.</p>
+
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="formName" class="form-label">Votre nom complet *</label>
+                            <input type="text" id="formName" class="form-input" placeholder="Ex: Jean Dupont" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="formEmail" class="form-label">Votre adresse email *</label>
+                            <input type="email" id="formEmail" class="form-input"
+                                placeholder="Ex: jean.dupont@entreprise.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="formSubject" class="form-label">Objet de la demande</label>
+                            <input type="text" id="formSubject" class="form-input"
+                                placeholder="Ex: Proposition de stage / échange technique">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="formMessage" class="form-label">Votre message *</label>
+                            <textarea id="formMessage" class="form-textarea"
+                                placeholder="Bonjour Miguel, nous aimerions échanger avec vous concernant..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                            Envoyer le message
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div id="realisations" class="section bg-white">
-            <div class="boxed">
-                <div class="text-center">
-                    <div class="w100">
-                        <h2>Réalisations</h2>
-                    </div>
-                    <div class="projects-container flex space-between gap20">
-                        <div class="project-card">
-                            <div class="card-inner">
-                                <div class="card-front">
-                                    <img src="img/projeth.PNG" alt="Communication Web pour une Activité de Divertissement">
-                                </div>
-                                <div class="card-back">
-                                    <h3>Projet CWAD</h3>
-                                    <p>Ce projet a porté sur la conception complète d'un lieu de divertissement fictif. 
-                                        J'ai eu pour mission de développer son identité unique (nom, slogan, et visuels), 
-                                        puis de la matérialiser et la présenter via un site web dédié.,
-                                         </p>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="project-card">
-                            <div class="card-inner">
-                                <div class="card-front">
-                                    <img src="img/projetr.png" alt="Recueil de besoins">
-                                </div>
-                                <div class="card-back">
-                                    <h3>Recueil de besoins</h3>
-                                    <p>Ce projet a consisté à concevoir un cahier des charges détaillé pour la maison d'édition fictive "Les éditions du Caribou". 
-                                        J'ai analysé les besoins pour définir les spécifications techniques et fonctionnelles.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="card-inner">
-                                <div class="card-front">
-                                    <img src="img/projetc.png" alt="Projet C">
-                                </div>
-                                <div class="card-back">
-                                    <h3>Comparaison d’approches algorithmiques</h3>
-                                    <p>Ce projet consiste à développer un jeu vidéo 2D en C++ en utilisant la bibliothèque SDL2. 
-                                        J'ai implémenté les fonctionnalités suivantes : gestion des personnages et de leurs animations, chargement des niveaux à partir de fichiers, 
-                                        détection des collisions et interactions avec les objets du jeu.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="card-inner">
-                                <div class="card-front">
-                                    <img src="img/projetb.jpg" alt="Projet Générique">
-                                </div>
-                                <div class="card-back">
-                                    <h3>Création d’une base de données</h3>
-                                    <p>Ce projet consiste à étudier et réaliser une base de données à partir d'un besoin client, 
-                                        offrant une première approche de la formalisation et de l'implémentation d'une base de données..</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- =======================================================================
+         8. PIED DE PAGE (Footer Corporate)
+         ======================================================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-brand">Miguel Ryan NONGNI</div>
+                    <div class="footer-desc">Étudiant en BUT Informatique • IUT d'Orsay, Université Paris-Saclay</div>
                 </div>
+                <div class="footer-links">
+                    <a href="#accueil" class="footer-link">Accueil</a>
+                    <a href="#apropos" class="footer-link">À propos</a>
+                    <a href="#competences" class="footer-link">Compétences</a>
+                    <a href="#realisations" class="footer-link">Réalisations</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                    <a href="img/stage-M.pdf" target="_blank" class="footer-link">Mon CV</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Miguel Ryan NONGNI.
             </div>
         </div>
+    </footer>
 
 
-        <div id="contact" class="section bg-image">
-            <div class="boxed">
-                <div class="text-center">
-                    <div class="w100">
-                        <h2>Contactez-moi</h2>
-                        <div class ="flex space-between">
-                            <div class="w32 contact">
-                                <span class="material-icons icon">mail</span>
-                                <span class="value">miguel.nongni1@gmail.com</span>
-                            </div>
-                            <div class="w32 contact">
-                                <span class="material-icons icon">call</span>
-                                <span class="value">+33 7 81 96 12 76</span>
-                            </div>
-                            <div class="w32 contact">
-                                <img src="img/logolink.png" alt="LinkedIn" style="width: 60px;">
-                                <span class="value">Miguel Nongni Ryan</span>
-                                <a href="https://www.linkedin.com/in/miguel-nongni-70b570301" >
-                                    <span class="material-icons icon">link</span>
-                                </a>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Notification Toast (Feedback de copie) -->
+    <div class="toast" id="toast"></div>
 
+    <!-- Script JavaScript Principal -->
+    <script src="js/app.js"></script>
+</body>
 
-        </body>
-        <script src="js/app.js"></script>
 </html>
